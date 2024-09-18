@@ -15,5 +15,4 @@ class Solution:
                 else:
                     dp[i][j] = min(dp[i+1][j], dp[i][j-1]) + 1
         
-        # Return the minimum number of insertions needed
         return dp[0][n-1]
