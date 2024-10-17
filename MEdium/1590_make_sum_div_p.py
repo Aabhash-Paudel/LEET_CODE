@@ -12,3 +12,4 @@ class Solution:
                 res = min(res, i - index_map[(prefix_sum - rem) % p])
             index_map[prefix_sum] = i
         return res if res < len(nums) else -1
+    
